@@ -36,39 +36,43 @@
 </head>
 <body class="font-sans text-slate-900 antialiased bg-white">
 
-    <!-- Enterprise Navigation -->
-    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-6">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-5">
         <div class="container mx-auto px-6 flex justify-between items-center">
             <div class="flex items-center gap-2">
-                <img 
-                    src="https://cdn.prod.website-files.com/65a988b51a4bac3a6aba20f8/68c803aa918d0a71b8427238_Group%208.svg" 
-                    alt="CostCare.AI" 
-                    class="h-8 w-auto md:h-10 brightness-0 invert" 
-                />
-                <span class="text-xs font-mono text-indigo-300 border border-indigo-500/30 px-2 py-0.5 rounded ml-2 uppercase tracking-wider">Enterprise</span>
+                <a href="https://www.costcare.ai/">
+                    <img
+                        src="https://cdn.prod.website-files.com/65a988b51a4bac3a6aba20f8/68c803aa918d0a71b8427238_Group%208.svg"
+                        alt="CostCare.AI"
+                        class="h-8 w-auto md:h-10 brightness-0 invert"
+                    />
+                </a>
             </div>
-            
+
             <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
-                <a href="#platform" class="hover:text-white transition-colors">Platform</a>
-                <a href="#security" class="hover:text-white transition-colors">Security</a>
-                <a href="#solutions" class="hover:text-white transition-colors">Solutions</a>
-                <a href="#resources" class="hover:text-white transition-colors">Resources</a>
-                <button class="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-2.5 rounded-lg transition-all shadow-lg shadow-indigo-900/50 font-semibold border border-indigo-500/50">
-                    Schedule Briefing
-                </button>
+                <a href="https://www.costcare.ai/#about-us" class="hover:text-white transition-colors">About us</a>
+                <a href="https://www.costcare.ai/#for-whom" class="hover:text-white transition-colors">For whom</a>
+                <a href="https://www.costcare.ai/#features" class="hover:text-white transition-colors">Features</a>
+                <a href="https://www.costcare.ai/#why-us" class="hover:text-white transition-colors">Why us</a>
+                <a href="https://www.costcare.ai/#faq" class="hover:text-white transition-colors">FAQ</a>
+                <a href="https://calendly.com/wahtel-costcare/30min" class="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2.5 rounded-full transition-all shadow-lg shadow-indigo-900/50 font-semibold">
+                    Book a DEMO
+                </a>
             </div>
 
             <button id="menuToggle" class="md:hidden text-white">
                 <i data-lucide="menu" class="w-6 h-6"></i>
             </button>
         </div>
-        
+
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-slate-900 border-b border-slate-800 p-6 flex flex-col gap-4 md:hidden">
-            <a href="#platform" class="text-lg font-medium text-slate-300">Platform</a>
-            <a href="#security" class="text-lg font-medium text-slate-300">Security</a>
-            <a href="#solutions" class="text-lg font-medium text-slate-300">Solutions</a>
-            <button class="bg-indigo-600 text-white w-full py-3 rounded-lg font-semibold">Contact Sales</button>
+            <a href="https://www.costcare.ai/#about-us" class="text-lg font-medium text-slate-300">About us</a>
+            <a href="https://www.costcare.ai/#for-whom" class="text-lg font-medium text-slate-300">For whom</a>
+            <a href="https://www.costcare.ai/#features" class="text-lg font-medium text-slate-300">Features</a>
+            <a href="https://www.costcare.ai/#why-us" class="text-lg font-medium text-slate-300">Why us</a>
+            <a href="https://www.costcare.ai/#faq" class="text-lg font-medium text-slate-300">FAQ</a>
+            <a href="https://calendly.com/wahtel-costcare/30min" class="bg-indigo-600 text-white w-full py-3 rounded-lg font-semibold text-center">Book a DEMO</a>
         </div>
     </nav>
 
@@ -543,11 +547,11 @@
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 20) {
-                navbar.classList.remove('bg-transparent', 'py-6');
+                navbar.classList.remove('bg-transparent', 'py-5');
                 navbar.classList.add('bg-slate-900/95', 'backdrop-blur-md', 'shadow-lg', 'py-3');
             } else {
                 navbar.classList.remove('bg-slate-900/95', 'backdrop-blur-md', 'shadow-lg', 'py-3');
-                navbar.classList.add('bg-transparent', 'py-6');
+                navbar.classList.add('bg-transparent', 'py-5');
             }
         });
 
